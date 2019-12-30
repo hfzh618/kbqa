@@ -12,13 +12,13 @@ importlib.reload(sys)
 
 
 class Config(object):
-    data_path = "."
-    source_train_path = data_path + "/source.train"
-    source_test_path = data_path + "/source.test"
-    target_train_path = data_path + "/target.train"
-    target_test_path = data_path + "/target.test"
-    source_vocab_path = data_path + "/source.vocab"
-    target_vocab_path = data_path + "/target.vocab"
+    data_path = "./data/simple.v0."
+    source_train_path = data_path + "source.train"
+    source_test_path = data_path + "source.test"
+    target_train_path = data_path + "target.train"
+    target_test_path = data_path + "target.test"
+    source_vocab_path = data_path + "source.vocab"
+    target_vocab_path = data_path + "target.vocab"
     checkpoint_path = "checkpoint"
 
     hidden_size = 256
