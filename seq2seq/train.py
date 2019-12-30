@@ -19,7 +19,7 @@ class Config(object):
     target_test_path = data_path + "target.test"
     source_vocab_path = data_path + "source.vocab"
     target_vocab_path = data_path + "target.vocab"
-    checkpoint_path = "checkpoint"
+    checkpoint_path = "./checkpoint"
 
     hidden_size = 256
     batch_size = 64
