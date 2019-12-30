@@ -6,8 +6,9 @@ import torch.optim as optim
 import numpy as np
 from torch.autograd import Variable
 import sys
+import importlib
 
-reload(sys)
+importlib.reload(sys)
 sys.setdefaultencoding('utf8')
 
 
