@@ -135,7 +135,7 @@ def run_epoch(source_batch, source_lengths, target_batch, target_lengths, encode
         loss.backward()
         encoder_optimizer.step()
         decoder_optimizer.step()
-        return loss.data[0]
+        return loss.item()
     else:  # test
         preds = []
         hits = 0
