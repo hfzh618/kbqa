@@ -9,7 +9,6 @@ import sys
 import importlib
 
 importlib.reload(sys)
-sys.setdefaultencoding('utf8')
 
 
 class Config(object):
