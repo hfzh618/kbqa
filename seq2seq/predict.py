@@ -23,7 +23,7 @@ decoder = torch.load(checkpoint_path+"/decoder.model.iter"+str(iter_num)+".pth")
 
 precision, preds = train.run_epoch(source_batch, source_lengths, target_batch, target_lengths, encoder, decoder, TRAIN=False)
 
-print precision
+print(precision)
 
 fout = open("predict.result","w")
 
