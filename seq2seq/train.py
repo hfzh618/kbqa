@@ -224,6 +224,6 @@ if __name__ == "__main__":
                                          encoder_optimizer, decoder_optimizer, TRAIN=False)
             print("precision: " + str(precision))
 
-#         if iter % save_every == 0:
-#             torch.save(encoder, config.checkpoint_path + "/encoder.model.iter" + str(iter) + ".pth")
-#             torch.save(decoder, config.checkpoint_path + "/decoder.model.iter" + str(iter) + ".pth")
+        if iter % save_every == 0:
+            torch.save(encoder, config.checkpoint_path + "/encoder.model.iter" + str(iter) + ".pth")
+            torch.save(decoder, config.checkpoint_path + "/decoder.model.iter" + str(iter) + ".pth")
